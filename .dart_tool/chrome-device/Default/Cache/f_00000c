@@ -1,0 +1,1148 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/firebase_auth/firebase_auth.dart', 'packages/google_sign_in/google_sign_in.dart', 'packages/firebase_auth_platform_interface/src/types.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/image_resolution.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/material/text_field.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/input_border.dart'], (function load__packages__fan_page__screens__login_screen_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__firebase_auth__firebase_auth$46dart, packages__google_sign_in__google_sign_in$46dart, packages__firebase_auth_platform_interface__src__types$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__image_resolution$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__material__text_field$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__input_border$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const firebase_auth = packages__firebase_auth__firebase_auth$46dart.firebase_auth;
+  const google_sign_in = packages__google_sign_in__google_sign_in$46dart.google_sign_in;
+  const google_auth = packages__firebase_auth_platform_interface__src__types$46dart.src__providers__google_auth;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const input_decorator = packages__flutter__src__material__icon_button$46dart.src__material__input_decorator;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const image_resolution = packages__flutter__src__painting__image_resolution$46dart.src__painting__image_resolution;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const text_field = packages__flutter__src__material__text_field$46dart.src__material__text_field;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const input_border = packages__flutter__src__material__input_border$46dart.src__material__input_border;
+  var login_screen = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    ObjectN: () => (T.ObjectN = dart.constFn(dart.nullable(core.Object)))(),
+    StringTovoid: () => (T.StringTovoid = dart.constFn(dart.fnType(dart.void, [core.String])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    FutureOfvoid: () => (T.FutureOfvoid = dart.constFn(async.Future$(dart.void)))(),
+    VoidToFutureOfvoid: () => (T.VoidToFutureOfvoid = dart.constFn(dart.fnType(T.FutureOfvoid(), [])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 33,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 20,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 35,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 35
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 7,
+        [EdgeInsets_right]: 7,
+        [EdgeInsets_top]: 7,
+        [EdgeInsets_left]: 7
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onChanged",
+        [_Location_column]: 25,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 25,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 25,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([C[10] || CT.C10, C[11] || CT.C11, C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 23,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 21,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20, C[21] || CT.C21], widget_inspector._Location);
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onChanged",
+        [_Location_column]: 25,
+        [_Location_line]: 108,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 25,
+        [_Location_line]: 111,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 25,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 25,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27, C[28] || CT.C28], widget_inspector._Location);
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 107,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 23,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 107,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31, C[32] || CT.C32], widget_inspector._Location);
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 105,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 21,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35, C[36] || CT.C36], widget_inspector._Location);
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 100,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 142,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 143,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 34,
+        [_Location_line]: 141,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 27,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 27,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 139,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47], widget_inspector._Location);
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 138,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 23,
+        [_Location_line]: 134,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50, C[51] || CT.C51], widget_inspector._Location);
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 133,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 21,
+        [_Location_line]: 130,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.constList([C[54] || CT.C54, C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[53] || CT.C53,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 129,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 23,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 23,
+        [_Location_line]: 158,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58, C[59] || CT.C59], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 156,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 21,
+        [_Location_line]: 153,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 156,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.constList([C[62] || CT.C62, C[63] || CT.C63], widget_inspector._Location);
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[61] || CT.C61,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 152,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 80,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 80
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 41,
+        [_Location_line]: 187,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 41,
+        [_Location_line]: 188,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67, C[68] || CT.C68], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 39,
+        [_Location_line]: 186,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 37,
+        [_Location_line]: 183,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 37,
+        [_Location_line]: 185,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.constList([C[71] || CT.C71, C[72] || CT.C72], widget_inspector._Location);
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[70] || CT.C70,
+        [_Location_name]: null,
+        [_Location_column]: 42,
+        [_Location_line]: 182,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 35,
+        [_Location_line]: 181,
+        [_Location_file]: null
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 35,
+        [_Location_line]: 182,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.constList([C[75] || CT.C75, C[76] || CT.C76], widget_inspector._Location);
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[74] || CT.C74,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 180,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 33,
+        [_Location_line]: 180,
+        [_Location_file]: null
+      });
+    },
+    get C78() {
+      return C[78] = dart.constList([C[79] || CT.C79], widget_inspector._Location);
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[78] || CT.C78,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 179,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 31,
+        [_Location_line]: 175,
+        [_Location_file]: null
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 31,
+        [_Location_line]: 179,
+        [_Location_file]: null
+      });
+    },
+    get C81() {
+      return C[81] = dart.constList([C[82] || CT.C82, C[83] || CT.C83], widget_inspector._Location);
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[81] || CT.C81,
+        [_Location_name]: null,
+        [_Location_column]: 36,
+        [_Location_line]: 174,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 29,
+        [_Location_line]: 170,
+        [_Location_file]: null
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 29,
+        [_Location_line]: 174,
+        [_Location_file]: null
+      });
+    },
+    get C85() {
+      return C[85] = dart.constList([C[86] || CT.C86, C[87] || CT.C87], widget_inspector._Location);
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[85] || CT.C85,
+        [_Location_name]: null,
+        [_Location_column]: 34,
+        [_Location_line]: 169,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 27,
+        [_Location_line]: 168,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 27,
+        [_Location_line]: 169,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.constList([C[90] || CT.C90, C[91] || CT.C91], widget_inspector._Location);
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[89] || CT.C89,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 167,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.constList([C[94] || CT.C94], widget_inspector._Location);
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[93] || CT.C93,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C96() {
+      return C[96] = dart.constList([C[97] || CT.C97], widget_inspector._Location);
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[96] || CT.C96,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 17,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.constList([C[100] || CT.C100, C[101] || CT.C101], widget_inspector._Location);
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[99] || CT.C99,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 15,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C103() {
+      return C[103] = dart.constList([C[104] || CT.C104, C[105] || CT.C105], widget_inspector._Location);
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[103] || CT.C103,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.constList([C[108] || CT.C108, C[109] || CT.C109], widget_inspector._Location);
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[107] || CT.C107,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C111() {
+      return C[111] = dart.constList([C[112] || CT.C112, C[113] || CT.C113], widget_inspector._Location);
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[111] || CT.C111,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 7,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C115() {
+      return C[115] = dart.constList([C[116] || CT.C116, C[117] || CT.C117], widget_inspector._Location);
+    },
+    get C114() {
+      return C[114] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[115] || CT.C115,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/Maha/Desktop/mobile-app-main/lib/screens/login_screen.dart"
+      });
+    }
+  }, false);
+  var C = Array(118).fill(void 0);
+  var I = ["package:fan_page/screens/login_screen.dart"];
+  login_screen.LogIn = class LogIn extends framework.StatefulWidget {
+    createState() {
+      return new login_screen._LogInState.new();
+    }
+  };
+  (login_screen.LogIn.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    login_screen.LogIn.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = login_screen.LogIn.prototype;
+  dart.addTypeTests(login_screen.LogIn);
+  dart.addTypeCaches(login_screen.LogIn);
+  dart.setMethodSignature(login_screen.LogIn, () => ({
+    __proto__: dart.getMethods(login_screen.LogIn.__proto__),
+    createState: dart.fnType(login_screen._LogInState, [])
+  }));
+  dart.setLibraryUri(login_screen.LogIn, I[0]);
+  var _success = dart.privateName(login_screen, "_success");
+  var _auth = dart.privateName(login_screen, "_auth");
+  var _googleSignIn = dart.privateName(login_screen, "_googleSignIn");
+  var _handleGoogle = dart.privateName(login_screen, "_handleGoogle");
+  var _signInWithEmailAndPassword = dart.privateName(login_screen, "_signInWithEmailAndPassword");
+  var _handleFacebook = dart.privateName(login_screen, "_handleFacebook");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  login_screen._LogInState = class _LogInState extends framework.State$(login_screen.LogIn) {
+    [_handleGoogle]() {
+      return async.async(dart.void, (function* _handleGoogle() {
+        try {
+          let googleUser = (yield this[_googleSignIn].signIn());
+          if (googleUser == null) return;
+          let googleAuth = (yield googleUser.authentication);
+          let credential = google_auth.GoogleAuthProvider.credential({accessToken: googleAuth.accessToken, idToken: googleAuth.idToken});
+          yield firebase_auth.FirebaseAuth.instance.signInWithCredential(credential);
+        } catch (e) {
+          let error = dart.getThrown(e);
+          if (core.Object.is(error)) {
+            core.print(error);
+          } else
+            throw e;
+        }
+      }).bind(this));
+    }
+    [_signInWithEmailAndPassword]() {
+      return async.async(dart.void, (function* _signInWithEmailAndPassword() {
+        let user = (yield this[_auth].signInWithEmailAndPassword({email: this.userName, password: this.password})).user;
+        if (this.userName === "mahalakshmiammalu@gmail.com") {
+          navigator.Navigator.pushNamed(T.ObjectN(), this.context, "/admin");
+        } else {
+          navigator.Navigator.pushNamed(T.ObjectN(), this.context, "/admin");
+        }
+      }).bind(this));
+    }
+    [_handleFacebook]() {
+      return async.async(dart.void, function* _handleFacebook() {
+        try {
+        } catch (e) {
+          let error = dart.getThrown(e);
+          if (core.Object.is(error)) {
+            core.print(error);
+          } else
+            throw e;
+        }
+      });
+    }
+    build(context) {
+      let size = media_query.MediaQuery.of(context).size;
+      return new scaffold.Scaffold.new({backgroundColor: colors.Colors.black, body: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceBetween, children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/images/login.png"), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), new basic.Padding.new({padding: C[6] || CT.C6, child: new container.Container.new({height: size.height * 0.5, child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidget().of([new container.Container.new({decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.circular(40.0), color: new ui.Color.fromRGBO(229, 229, 229, 0.6)}), child: new basic.Padding.new({padding: C[7] || CT.C7, child: new text_field.TextField.new({onChanged: dart.fn(value => {
+                            this.userName = value;
+                          }, T.StringTovoid()), textAlign: ui.TextAlign.center, style: new text_style.TextStyle.new({fontSize: 20.0}), decoration: new input_decorator.InputDecoration.new({border: input_border.InputBorder.none, focusedBorder: input_border.InputBorder.none, enabledBorder: input_border.InputBorder.none, errorBorder: input_border.InputBorder.none, disabledBorder: input_border.InputBorder.none, hintText: "Email", hintStyle: new text_style.TextStyle.new({color: new ui.Color.new(4281677109), fontSize: size.width * 0.042})}), $creationLocationd_0dea112b090073317d4: C[8] || CT.C8}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), new container.Container.new({decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.circular(40.0), color: new ui.Color.fromRGBO(229, 229, 229, 0.6)}), child: new basic.Padding.new({padding: C[7] || CT.C7, child: new text_field.TextField.new({onChanged: dart.fn(value => {
+                            this.password = value;
+                          }, T.StringTovoid()), textAlign: ui.TextAlign.center, style: new text_style.TextStyle.new({fontSize: 20.0}), obscureText: true, decoration: new input_decorator.InputDecoration.new({border: input_border.InputBorder.none, focusedBorder: input_border.InputBorder.none, enabledBorder: input_border.InputBorder.none, errorBorder: input_border.InputBorder.none, disabledBorder: input_border.InputBorder.none, hintText: "Password", hintStyle: new text_style.TextStyle.new({color: new ui.Color.new(4281677109), fontSize: size.width * 0.042})}), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), $creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), $creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                        this[_signInWithEmailAndPassword]();
+                      }, T.VoidTovoid()), child: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.circular(40.0), color: colors.Colors.white}), child: new basic.Center.new({child: new container.Container.new({padding: new edge_insets.EdgeInsets.all(10.0), child: new text.Text.new("Login", {style: new text_style.TextStyle.new({color: colors.Colors.black, fontSize: size.width * 0.042}), $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), $creationLocationd_0dea112b090073317d4: C[52] || CT.C52}), new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                        navigator.Navigator.pushNamed(T.ObjectN(), context, "/register");
+                      }, T.VoidTovoid()), child: new text.Text.new("", {style: new text_style.TextStyle.new({color: new ui.Color.new(4281677109), fontSize: size.width * 0.032}), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56}), $creationLocationd_0dea112b090073317d4: C[60] || CT.C60}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new basic.Padding.new({padding: C[64] || CT.C64, child: new gesture_detector.GestureDetector.new({onTap: dart.fn(() => async.async(dart.void, (function*() {
+                                yield this[_handleGoogle]();
+                                navigator.Navigator.pushNamed(T.ObjectN(), context, "/admin");
+                              }).bind(this)), T.VoidToFutureOfvoid()), child: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.circular(40.0), color: new ui.Color.new(4293542466)}), child: new basic.Center.new({child: new container.Container.new({padding: new edge_insets.EdgeInsets.all(9.0), child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidget().of([new text.Text.new("Sign In with Google", {style: new text_style.TextStyle.new({color: colors.Colors.white, fontSize: size.width * 0.04}), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65})]), $creationLocationd_0dea112b090073317d4: C[69] || CT.C69}), $creationLocationd_0dea112b090073317d4: C[73] || CT.C73}), $creationLocationd_0dea112b090073317d4: C[77] || CT.C77}), $creationLocationd_0dea112b090073317d4: C[80] || CT.C80}), $creationLocationd_0dea112b090073317d4: C[84] || CT.C84}), $creationLocationd_0dea112b090073317d4: C[88] || CT.C88}), $creationLocationd_0dea112b090073317d4: C[92] || CT.C92})]), $creationLocationd_0dea112b090073317d4: C[95] || CT.C95})]), $creationLocationd_0dea112b090073317d4: C[98] || CT.C98}), $creationLocationd_0dea112b090073317d4: C[102] || CT.C102}), $creationLocationd_0dea112b090073317d4: C[106] || CT.C106})]), $creationLocationd_0dea112b090073317d4: C[110] || CT.C110}), $creationLocationd_0dea112b090073317d4: C[114] || CT.C114});
+    }
+  };
+  (login_screen._LogInState.new = function() {
+    this.userName = "";
+    this.password = "";
+    this[_success] = false;
+    this[_auth] = firebase_auth.FirebaseAuth.instance;
+    this[_googleSignIn] = new google_sign_in.GoogleSignIn.new();
+    login_screen._LogInState.__proto__.new.call(this);
+    ;
+  }).prototype = login_screen._LogInState.prototype;
+  dart.addTypeTests(login_screen._LogInState);
+  dart.addTypeCaches(login_screen._LogInState);
+  dart.setMethodSignature(login_screen._LogInState, () => ({
+    __proto__: dart.getMethods(login_screen._LogInState.__proto__),
+    [_handleGoogle]: dart.fnType(async.Future$(dart.void), []),
+    [_signInWithEmailAndPassword]: dart.fnType(dart.void, []),
+    [_handleFacebook]: dart.fnType(async.Future$(dart.void), []),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(login_screen._LogInState, I[0]);
+  dart.setFieldSignature(login_screen._LogInState, () => ({
+    __proto__: dart.getFields(login_screen._LogInState.__proto__),
+    userName: dart.fieldType(core.String),
+    password: dart.fieldType(core.String),
+    [_success]: dart.fieldType(core.bool),
+    [_auth]: dart.finalFieldType(firebase_auth.FirebaseAuth),
+    [_googleSignIn]: dart.fieldType(google_sign_in.GoogleSignIn)
+  }));
+  dart.trackLibraries("packages/fan_page/screens/login_screen.dart", {
+    "package:fan_page/screens/login_screen.dart": login_screen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["login_screen.dart"],"names":[],"mappings":"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","file":"../../../../../../packages/fan_page/screens/login_screen.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__login_screen: login_screen
+  };
+}));
+
+//# sourceMappingURL=login_screen.dart.lib.js.map
